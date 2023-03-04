@@ -10,34 +10,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="flex flex-col w-full h-screen items-center bg-slate-800">
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<div class="img-container">
-				<img src="/ryan.jpeg" alt="hero">
+			<div class="flex justify-center border rounded-2xl w-96">
+				<img class="border rounded-2xl" src="/ryan.jpeg" alt="hero">
 			</div>
-			<p>
-				This is my personal site, take a look around and enjoy the ride!
+			<p class="mt-10 text-sm text-center w-96">
+				Welcome to my personal site, take a look around and enjoy the ride!
 			</p>
 		</main>
 		<Footer />
 	</body>
-	<style>
-		.img-container {
-			display: flex;
-			justify-content: center;
-		}
-		h1 {
-			text-align: center;
-			color: white;
-		}
-
-		img {
-			width: 60%;
-			border-radius: 96px;
-			border: 2px solid white;
-		}
-	</style>
 </html>
 

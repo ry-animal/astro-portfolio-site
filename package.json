@@ -13,7 +13,9 @@
     "@astrojs/mdx": "^0.17.2",
     "@astrojs/rss": "^2.1.1",
     "@astrojs/sitemap": "^1.1.0",
+    "@astrojs/tailwind": "^3.0.1",
     "@fontsource/victor-mono": "^4.5.4",
-    "astro": "^2.0.16"
+    "astro": "^2.0.16",
+    "tailwindcss": "^3.0.24"
   }
 }

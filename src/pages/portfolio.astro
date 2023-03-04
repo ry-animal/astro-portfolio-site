@@ -3,18 +3,24 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { portfolioConfig } from '../portfolio.config';
+import Projects from '../components/Projects.astro';
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} | portfolio`} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="flex flex-col w-full h-screen items-center bg-slate-800">
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Portfolio </h1>
-			<p>Here are some of my projects</p>
+			<div class="flex flex-col items-center">
+				<h1 class="text-white">Portfolio </h1>
+				<p class="mb-10 text-xs sm:text-sm">here are some projects I have worked on</p>
+			</div>
+			<div class="w-full grid grid-cols-1 justify-center items-center px-12 md:grid-cols-2 xl:grid-cols-3 gap-12 sm:gap-24 mb-12">
+				<Projects />
+			</div>
 		</main>
 		<Footer />
 	</body>

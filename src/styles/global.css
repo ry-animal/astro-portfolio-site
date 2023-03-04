@@ -6,10 +6,6 @@
 body {
   font-family: "Victor Mono", monospace;
   margin: auto;
-  padding: 20px;
-  max-width: 65ch;
-  text-align: left;
-  background-color: slategray;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
